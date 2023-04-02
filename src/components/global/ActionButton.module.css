@@ -1,0 +1,14 @@
+.actionButton {
+  display: block;
+  padding: 10px 0;
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.actionButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

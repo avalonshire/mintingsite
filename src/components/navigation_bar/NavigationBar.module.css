@@ -1,0 +1,29 @@
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.75);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+  height: 80px;
+}
+
+.logoContainer {
+  padding-right: 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+}

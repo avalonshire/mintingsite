@@ -1,0 +1,26 @@
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  .counter-button {
+    background-color: #fafafa;
+    color: #444;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 0.25rem;
+    width: 2rem;
+    text-align: center;
+  }
+  
+  .counter-value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 1rem;
+  }
+  
