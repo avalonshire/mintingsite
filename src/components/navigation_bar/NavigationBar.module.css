@@ -13,6 +13,9 @@
   margin: 0;
   z-index: 1;
   height: 80px;
+  font-family: 'Advent Pro', sans-serif;
+  color:#F2921D;
+  font-weight:bold;
 }
 
 .logoContainer {

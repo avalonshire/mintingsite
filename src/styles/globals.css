@@ -21,6 +21,15 @@
 .ffTitle{
   font-size: 75px;
 }
+.policyId{
+  color: #060A13;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 12px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-text: center;
+}
 
 html,
 body {

@@ -113,6 +113,9 @@ function App(): JSX.Element {
         linkUrl={`https://cardanoscan.io/transaction/${lastTransactionHash ?? '<tx-hash>'}`}
         onClick={() => { setLastTransactionHash(null) }}
       />
+      <div className="policyId" >
+        <h1 >Policy ID: 35b1c2b342d902bda3cf7c8ea9be6f9bf286acda0b797df393538fe0</h1>
+      </div>
     </Page>
   );
 }

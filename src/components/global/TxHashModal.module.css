@@ -19,7 +19,9 @@
   .modalContent {
     max-height: calc(100% - 40px);
     overflow: auto;
-    background-color: white;
+    background-color: #060A13;
+    font-family: 'Advent Pro', sans-serif;
+    color: #F2CD5C;
     border-radius: 5px;
     padding: 20px;
     position: relative;
@@ -36,22 +38,30 @@
   .link {
     font-size: 18px;
     position: relative;
-    color: blue;
+    color: #1FA40A;
     text-decoration: underline;
     cursor: pointer;
     margin-bottom: 10px;
     text-align: center;
     margin-bottom: 24px;
+    font-family: 'Advent Pro', sans-serif;
   }
   
   .okButton {
     font-size: 18px;
-    background-color: transparent;
+    background-color: #1FA40A;
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
     align-self: center;
     width: 100px;
+    color:#060A13;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 700;
   }
   
+  .okButton:hover{
+    background-color: #1FA40A;
+    color:#B6EADA;
+  }

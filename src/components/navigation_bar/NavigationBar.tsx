@@ -9,7 +9,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ }) => {
   return (
     <nav className={styles.navigationBar}>
       <div className={styles.logoContainer}>
-        <img className={styles.logo} src={"/logo.png"} alt="Logo" />
+        <img className={styles.logo} src={"/5.gif"} alt="Logo" /> Powered by Fable Friends Co.
       </div>
     </nav>
   );

@@ -36,7 +36,7 @@ const TxHashModal: React.FC<TxHashModalProps> = ({
                 {linkText}
               </a>
               <button className={styles.okButton} onClick={handleOkClick}>
-                NICE!
+                Close
               </button>
             </div>
           </div>
