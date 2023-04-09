@@ -65,7 +65,7 @@ function App(): JSX.Element {
   }
 
   return (
-    <Page backgroundImage="/background.jpg">
+    <Page backgroundImage="/fable2.gif">
       <Toaster />
       <NavigationBar />
       <div className="center">
@@ -77,10 +77,10 @@ function App(): JSX.Element {
               </div>
             ) : (
               <>
-                <h1>$NFT_NAME</h1>
+                <h1 className="ffTitle">Fable Friends Co.</h1>
                 {verifiedAssets.length !== 0 ? (
                   <GlassyCard width="100%">
-                    <h2>$VERIFIED_ASSET</h2>
+                    <h2>FFC Founders Pass</h2>
                     <AssetList
                       assets={verifiedAssets}
                       emptyStateText={"No $VERIFIED_ASSET"}
@@ -90,7 +90,7 @@ function App(): JSX.Element {
                 ): null}
                 {requestedAssets.length !== 0 ? (
                   <GlassyCard width="100%">
-                    <h2>$REQUESTED_ASSET</h2>
+                    <h2>Fable Friends Summoning Orbs</h2>
                     <AssetList
                       assets={requestedAssets}
                       emptyStateText={"No $REQUESTED_ASSET"}
@@ -99,7 +99,7 @@ function App(): JSX.Element {
                   </GlassyCard>
                 ): null}
                 <Counter max={5} onCountChange={(count) => setMintQty(count)} />
-                <ActionButton title={"MINT $NFT_NAME"} onClick={mintHandler} disabled={!isConnected || isLoading} width={400} />
+                <ActionButton title={"Mint Fable Friends Co."} onClick={mintHandler} disabled={!isConnected || isLoading} width={400} />
               </>
             )}
           </div>

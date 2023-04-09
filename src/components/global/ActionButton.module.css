@@ -1,14 +1,21 @@
 .actionButton {
   display: block;
   padding: 10px 0;
-  background: #ffffff;
-  color: #000000;
+  background: #1FA40A;
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
+  color: #060A13;
+  font-family: 'Advent Pro', sans-serif;
+  border-radius: 10px;
 }
 
 .actionButton:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.actionButton:hover {
+  color: #B6EADA;
+ 
 }

@@ -19,6 +19,7 @@ interface AssetListProps {
 const AssetList: React.FC<AssetListProps> = ({ assets, itemsPerPage = 10, maxSelectedAssets = Infinity, onAssetSelect, emptyStateText }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedAssets, setSelectedAssets] = useState<Asset[]>([]);
+  
 
   const totalPages = Math.ceil(assets.length / itemsPerPage);
 
@@ -66,6 +67,28 @@ const AssetList: React.FC<AssetListProps> = ({ assets, itemsPerPage = 10, maxSel
       if (!asset.imageUrl) {
         return <p style={{ margin: 0, textAlign: "center" }}>{numberPart}</p>;
       }
+      console.log(asset.imageUrl)
+      console.log(asset.id)
+      let imgUrl = ''
+      if (asset?.id.includes("FFCOrb")){
+        const lastChar = asset?.id.slice(-1); // get the last character using negative indexing
+        const lastDigit = parseInt(lastChar)
+        const orbSet = lastDigit % 5
+        if (orbSet === 1){
+          imgUrl = '/1.gif'
+        }else if((orbSet === 2)){
+          imgUrl = '/2.gif'
+        }else if((orbSet === 3)){
+          imgUrl = '/3.gif'
+        }else if((orbSet === 4)){
+          imgUrl = '/4.gif'
+        }else if((orbSet === 0)){
+          imgUrl = '/5.gif'
+        }
+      } else if(asset?.id.includes("FFCOGPass")){
+          imgUrl = '/card.gif'
+      }
+
       const isSelected = selectedAssets.some(a => a.id === asset.id);
       return (
         <div
@@ -75,7 +98,7 @@ const AssetList: React.FC<AssetListProps> = ({ assets, itemsPerPage = 10, maxSel
           <div className={styles.cardImageWrapper}>
             <Image
               alt={asset.assetName}
-              src={asset.imageUrl}
+              src={imgUrl}
               width={200}
               height={200}
               className={styles.cardImage}
