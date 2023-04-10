@@ -80,7 +80,7 @@ function App(): JSX.Element {
                 <h1 className="ffTitle">Fable Friends Co.</h1>
                 {verifiedAssets.length !== 0 ? (
                   <GlassyCard width="100%">
-                    <h2>FFC Founders Pass</h2>
+                    <h2 >FFC Founders Pass</h2>
                     <AssetList
                       assets={verifiedAssets}
                       emptyStateText={"No $VERIFIED_ASSET"}

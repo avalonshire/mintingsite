@@ -17,9 +17,11 @@
   height: 100%;
   color: #F2CD5C;
   font-family: 'Advent Pro', sans-serif;
+  text-align: center
 }
 .ffTitle{
   font-size: 75px;
+  color: #F2921D;
 }
 .policyId{
   color: #060A13;
@@ -52,3 +54,14 @@ body {
     color-scheme: dark;
   }
 }
+
+@media screen and (max-width: 754px) {
+  .ffTitle {
+    font-size: 30px;
+  }
+  .center {
+    font-size: 10px;
+    text-align: center
+  }
+}
+

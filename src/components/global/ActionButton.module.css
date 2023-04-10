@@ -5,9 +5,10 @@
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
-  color: #060A13;
+  color:#301E67;
   font-family: 'Advent Pro', sans-serif;
   border-radius: 10px;
+  width: 200px;
   
 }
 
@@ -18,5 +19,6 @@
 
 .actionButton:hover {
   color: #B6EADA;
+  background:#A61F69;
  
 }

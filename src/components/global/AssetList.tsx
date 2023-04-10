@@ -70,7 +70,7 @@ const AssetList: React.FC<AssetListProps> = ({ assets, itemsPerPage = 10, maxSel
       console.log(asset.imageUrl)
       console.log(asset.id)
       let imgUrl = ''
-      if (asset?.id.includes("FFCOrb")){
+      if (asset?.id.includes("FFCOrb") || asset?.id.includes("FableFriendsOrb")){
         const lastChar = asset?.id.slice(-1); // get the last character using negative indexing
         const lastDigit = parseInt(lastChar)
         const orbSet = lastDigit % 5

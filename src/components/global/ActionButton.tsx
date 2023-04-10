@@ -17,10 +17,12 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   onClick = undefined
 }) => {
   return (
-    <button className={styles.actionButton} style={{ width, height }} onClick={onClick} disabled={disabled}>
+    <button className={styles.actionButton}  onClick={onClick} disabled={disabled}>
       {title}
     </button>
   );
 };
 
 export default ActionButton;
+
+/*style={{ width, height }}*/
